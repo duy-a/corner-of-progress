@@ -24,6 +24,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/moment',
   ],
 
   modules: ['@nuxt/content'],
