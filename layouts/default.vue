@@ -1,5 +1,14 @@
 <template>
-  <div class="max-w-3xl mx-auto px-4 divide-y divide-gray-300">
+  <div
+    class="
+      flex flex-col
+      min-h-screen
+      max-w-3xl
+      mx-auto
+      px-4
+      divide-y divide-gray-300
+    "
+  >
     <div class="pt-6 pb-4 text-center">
       <div class="flex items-center justify-center space-x-3">
         <img class="w-auto h-10" src="~/assets/img/logo.png" />
@@ -22,9 +31,13 @@
       </nav>
     </div>
 
-    <main>
+    <main class="flex-grow">
       <Nuxt />
     </main>
+
+    <footer class="text-center py-5 text-gray-500 text-sm">
+      <p>© 2021–{{ $moment().format('YYYY') }} Ngac Duy Anh</p>
+    </footer>
   </div>
 </template>
 
