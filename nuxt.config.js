@@ -2,7 +2,7 @@ export default {
   target: 'static',
 
   publicRuntimeConfig: {
-    siteUrl: process.env.BASE_URL || 'http://localhost:3000',
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
   },
 
   head: {
