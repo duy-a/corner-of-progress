@@ -1,7 +1,25 @@
 <template>
-  <div>
-    <NuxtContent class="prose mx-auto" :document="post" />
-  </div>
+  <article class="py-10 divide-y divide-gray-300">
+    <header class="mx-auto text-center pb-10">
+      <dl>
+        <dt class="sr-only">Published on</dt>
+        <dd class="font-medium text-gray-500">
+          <time :datetime="post.createdAt">
+            {{ $moment(post.createdAt).format('MMMM DD, YYYY') }}
+          </time>
+        </dd>
+      </dl>
+
+      <h3 class="text-5xl font-bold tracking-tight text-gray-900">
+        {{ post.title }}
+      </h3>
+    </header>
+
+    <NuxtContent
+      class="prose prose-lg mx-auto max-w-none mt-5"
+      :document="post"
+    />
+  </article>
 </template>
 
 <script>
