@@ -12,7 +12,7 @@
     <div class="pt-6 pb-4 text-center">
       <div class="flex items-center justify-center space-x-3">
         <img class="w-auto h-10" src="~/assets/img/logo.png" />
-        <NuxtLink to="/" aria-label="Go to Home page">
+        <NuxtLink to="/" aria-label="Home page">
           <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">
             Corner of Progress
           </h1>
@@ -24,17 +24,17 @@
       <nav class="mt-7">
         <ul class="flex items-center justify-center space-x-5">
           <li>
-            <NuxtLink to="about" class="nav-link" aria-label="Go to About page">
+            <NuxtLink to="about" class="nav-link" aria-label="About page">
               About
             </NuxtLink>
-            <NuxtLink
-              to="about"
-              class="nav-link"
-              aria-label="Go to Arhive page"
-            >
-              About
+          </li>
+          <li>
+            <NuxtLink to="about" class="nav-link" aria-label="Archive page">
+              Arhive
             </NuxtLink>
-            <NuxtLink to="about" class="nav-link" aria-label="Go to RSS feed">
+          </li>
+          <li>
+            <NuxtLink to="about" class="nav-link" aria-label="RSS page">
               RSS
             </NuxtLink>
           </li>
