@@ -42,7 +42,7 @@
       </nav>
     </div>
 
-    <main class="flex-grow">
+    <main class="flex-grow py-10">
       <Nuxt />
     </main>
 

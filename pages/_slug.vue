@@ -1,5 +1,5 @@
 <template>
-  <article class="py-10 divide-y divide-gray-300">
+  <article class="divide-y divide-gray-300">
     <header class="mx-auto text-center pb-10">
       <dl>
         <dt class="sr-only">Published on</dt>

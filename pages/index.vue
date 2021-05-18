@@ -1,5 +1,5 @@
 <template>
-  <ul class="divide-y divide-gray-300">
+  <ul class="divide-y divide-gray-300 -mt-10">
     <li v-for="post in posts" :key="post.title" class="py-14">
       <AppPostCard :post="post" />
     </li>
