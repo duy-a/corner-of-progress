@@ -1,6 +1,6 @@
 ---
 title: Creating blog with Nuxt
-description: 
+description: Hello world
 createdAt: 2021-05-20
 updatedAt: 2021-05-20
 slug: creating-blog-with-nuxt
