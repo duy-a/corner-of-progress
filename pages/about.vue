@@ -11,5 +11,10 @@ export default {
       about,
     }
   },
+  head() {
+    return {
+      title: 'About -',
+    }
+  },
 }
 </script>
