@@ -9,10 +9,10 @@
       </dd>
     </dl>
     <div class="space-y-5">
-      <NuxtLink :to="post.slug">
-        <h3 class="text-3xl font-bold tracking-tight text-gray-900">
+      <NuxtLink :to="post.slug" :aria-label="`Read - ${post.title}`">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900">
           {{ post.title }}
-        </h3>
+        </h2>
       </NuxtLink>
       <p class="font-light leading-7 text-gray-500 text-lg">
         {{ post.description }}

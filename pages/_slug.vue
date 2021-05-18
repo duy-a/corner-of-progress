@@ -10,9 +10,9 @@
         </dd>
       </dl>
 
-      <h3 class="text-5xl font-bold tracking-tight text-gray-900">
+      <h2 class="text-5xl font-bold tracking-tight text-gray-900">
         {{ post.title }}
-      </h3>
+      </h2>
     </header>
 
     <NuxtContent
