@@ -24,18 +24,13 @@
       <nav class="mt-7">
         <ul class="flex items-center justify-center space-x-5">
           <li>
+            <NuxtLink to="/" class="nav-link" aria-label="Home page">
+              Blog
+            </NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="about" class="nav-link" aria-label="About page">
               About
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="about" class="nav-link" aria-label="Archive page">
-              Arhive
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="about" class="nav-link" aria-label="RSS page">
-              RSS
             </NuxtLink>
           </li>
         </ul>
