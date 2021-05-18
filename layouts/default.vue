@@ -1,14 +1,22 @@
 <template>
   <div class="max-w-3xl mx-auto px-4 divide-y divide-gray-200">
     <div class="pt-6 pb-4 text-center">
-      <div class="flex items-center justify-center space-x-4">
-        <img class="w-12 h-12" src="~/assets/img/logo.png" />
-        <h1 class="text-5xl font-extrabold text-gray-900 tracking-tight">
+      <div class="flex items-center justify-center space-x-3">
+        <img class="w-auto h-10 lg:h-12" src="~/assets/img/logo.png" />
+        <h1
+          class="
+            text-4xl
+            lg:text-5xl
+            font-extrabold
+            text-gray-900
+            tracking-tight
+          "
+        >
           Corner of Progress
         </h1>
       </div>
-      <h2 class="text-xl text-gray-500 mt-2">
-        Place of documenting new developments, learnings & discoveries
+      <h2 class="text-lg md:text-xl text-gray-500 mt-1">
+        Place of documenting new learnings & discoveries
       </h2>
       <p class="text-xs text-gray-500 mt-3">by Ngac Duy Anh (Ted)</p>
 
