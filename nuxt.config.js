@@ -1,3 +1,15 @@
+const createSitemapRoutes = async () => {
+  const routes = []
+  const { $content } = require('@nuxt/content')
+  const posts = await $content('posts').fetch()
+
+  for (const post of posts) {
+    routes.push(post.slug)
+  }
+
+  return routes
+}
+
 export default {
   target: 'static',
 
@@ -95,9 +107,15 @@ export default {
     '@nuxtjs/moment',
   ],
 
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
 
   content: {},
+
+  sitemap: {
+    hostname: process.env.BASE_URL || 'http://localhost:3000',
+    gzip: true,
+    routes: createSitemapRoutes,
+  },
 
   build: {},
 }
