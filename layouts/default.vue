@@ -11,7 +11,7 @@
   >
     <div class="pt-6 pb-4 text-center">
       <div class="flex items-center justify-center space-x-3">
-        <img class="w-auto h-10" src="~/assets/img/logo.png" />
+        <img class="w-auto h-10" src="~/assets/img/logo.png" alt="Logo" />
         <NuxtLink to="/" aria-label="Home page">
           <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">
             Corner of Progress
@@ -49,6 +49,6 @@
 
 <style lang="postcss" scoped>
 .nav-link {
-  @apply font-light text-green-600 hover:text-green-700 underline;
+  @apply text-green-700 hover:text-green-800 underline;
 }
 </style>
