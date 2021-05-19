@@ -10,11 +10,13 @@ const createSitemapRoutes = async () => {
   return routes
 }
 
+const siteUrl = process.env.BASE_URL || 'http://localhost:3000'
+
 export default {
   target: 'static',
 
   publicRuntimeConfig: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    baseUrl: siteUrl,
   },
 
   head: {
@@ -38,7 +40,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: process.env.BASE_URL || 'http://localhost:3000',
+        content: siteUrl,
       },
       {
         hid: 'og:title',
@@ -54,7 +56,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: `${process.env.BASE_URL}/og-logo.png`,
+        content: `${siteUrl}/img/og-logo.png`,
       },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '627' },
@@ -65,7 +67,7 @@ export default {
       {
         hid: 'twitter:url',
         name: 'twitter:url',
-        content: process.env.BASE_URL || 'http://localhost:3000',
+        content: siteUrl,
       },
       {
         hid: 'twitter:title',
@@ -81,7 +83,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: `${process.env.BASE_URL}/twitter-card-logo.png`,
+        content: `${siteUrl}/img/twitter-card-logo.png`,
       },
     ],
     link: [
@@ -89,7 +91,7 @@ export default {
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: process.env.BASE_URL,
+        href: siteUrl,
       },
     ],
   },
@@ -107,12 +109,20 @@ export default {
     '@nuxtjs/moment',
   ],
 
-  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
+  modules: ['@nuxt/content', '@nuxtjs/robots', '@nuxtjs/sitemap'],
 
   content: {},
 
+  robots: [
+    {
+      UserAgent: '*',
+      Allow: '/',
+      Sitemap: `${siteUrl}/sitemap.xml`,
+    },
+  ],
+
   sitemap: {
-    hostname: process.env.BASE_URL || 'http://localhost:3000',
+    hostname: siteUrl,
     gzip: true,
     routes: createSitemapRoutes,
   },
