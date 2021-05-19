@@ -9,7 +9,7 @@ tags:
 
 ## Motivation
 
-I didn't do any serious software development related projects since a career change. Considering how fast the technology progresses and new exciting things getting announced every day, I suddenly had an urge to refresh my knowledge & polish my coding skills, and share & document progress. And thus opening a code editor once again.
+I didn't do any serious software development related projects since a career change. Considering how fast the technology progresses and new exciting things getting announced every day, I suddenly had an urge to refresh my knowledge & polish my coding skills. While doing all that share & document progress at the same time. And thus opening a code editor once again.
 
 ## Projects to work on
 
