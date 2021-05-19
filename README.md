@@ -2,8 +2,6 @@
 
 # Corner of Progress
 
-Personal corner on the internet where I share my thoughts on various topics, learnings, new discoveries & development.
-
-[Read](https://cornerofprogress.com/)
+[Read](https://cornerofprogress.com/) my personal corner on the internet where I share my thoughts on various topics, learnings, new discoveries & development.
 
 Built with [Nuxt.js](https://nuxtjs.org).
