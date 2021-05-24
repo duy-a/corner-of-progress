@@ -15,7 +15,7 @@ I have some [Vue](https://vuejs.org/) experience in the past, and I will use it 
 ## Single Page Application (SPA) & Server-Side Rendering (SSR)
 SPA means re-rendering the same page based on user input without refreshing a page. User requests a page once and gets back just an empty template, and everything else happens via client-side render using javascript. The benefit of SPA is a better user experience, removing the flashing of a white screen since it eliminates the need to request a new page each time.
 
-![Illustration showing difference between SPA vs Traditional Web](https://www.digitalclaritygroup.com/wp-content/uploads/2017/10/SPA-1.png)
+![Illustration showing difference between SPA vs Traditional Web](https://cornerofprogress.com/posts/img/spa-vs-traditional-web.png)
 
 However, the search engine crawler is busy & it doesn’t have time to wait for javascript to render content. Crawler takes the first thing it gets from a request and moves on, which means a crawler get an empty document template without content. 
 
@@ -23,7 +23,7 @@ For SPA to play nicely with a search engine crawler, a solution would be to set 
 
 It is a win-win solution for both user & search engine crawler.
 
-![Illustration showing how SSR works](https://pbs.twimg.com/media/ENrgBsMWwAEfP2u?format=png&name=medium)
+![Illustration showing how SSR works](https://cornerofprogress.com/posts/img/ssr-process.png)
 
 Great, so now the solution to the problem is to set up SSR for Vue, but it is a very [cumbersome process](https://ssr.vuejs.org/) and, honestly, not worth the time. Luckily, Vue has an incredible community, and you bet there is a Vue project with properly configured aspects of a production-ready SSR app.
 
@@ -39,7 +39,7 @@ Nuxt is one of the [official recommendations](https://vuejs.org/v2/guide/ssr.htm
 
 Even though SSR would be a solution to a problem, a statically generated website would be a perfect fit for a blog. It means that the content is pre-generated or pre-rendered beforehand as all required files and serve them as it is. There is no need for a server to process a page before serving. 
 
-![Illustration showing Statically generated website works](https://cdn.netlify.com/b0cd7be20ba718c92b5da007a109a89122f6791a/7824d/img/blog/ssg-host-flow.png)
+![Illustration showing Statically generated website works](https://cornerofprogress.com/posts/img/statically-generated.png)
 
 There are many [benefits](https://www.netlify.com/blog/2020/04/14/what-is-a-static-site-generator-and-3-ways-to-find-the-best-one/) to using this approach to build a blog. There are many different solutions to do a statically generated website. However, as I mentioned in my [previous post](https://cornerofprogress.com/opening-code-editor-once-again), creating a blog will be my refresher, and I will use Vue for my next project.
 
