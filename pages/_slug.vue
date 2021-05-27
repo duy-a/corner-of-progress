@@ -3,20 +3,28 @@
     <header class="mx-auto text-center pb-10">
       <dl>
         <dt class="sr-only">Published on</dt>
-        <dd class="font-medium text-gray-500">
+        <dd class="font-medium text-gray-500 dark:text-gray-400">
           <time :datetime="post.createdAt">
             {{ $moment(post.createdAt).format('MMMM DD, YYYY') }}
           </time>
         </dd>
       </dl>
 
-      <h2 class="text-5xl font-bold tracking-tight text-gray-900">
+      <h2
+        class="
+          text-5xl
+          font-bold
+          tracking-tight
+          text-gray-900
+          dark:text-gray-200
+        "
+      >
         {{ post.title }}
       </h2>
     </header>
 
     <NuxtContent
-      class="prose prose-lg mx-auto max-w-none mt-5"
+      class="prose dark:prose-dark prose-lg mx-auto max-w-none mt-5"
       :document="post"
     />
   </article>

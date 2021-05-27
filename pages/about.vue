@@ -1,5 +1,5 @@
 <template>
-  <NuxtContent class="prose max-w-none" :document="about" />
+  <NuxtContent class="prose dark:prose-dark max-w-none" :document="about" />
 </template>
 
 <script>

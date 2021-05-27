@@ -107,11 +107,22 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/moment',
+    '@nuxtjs/color-mode',
   ],
+
+  colorMode: {
+    classSuffix: '',
+  },
 
   modules: ['@nuxt/content', '@nuxtjs/robots', '@nuxtjs/sitemap'],
 
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css',
+      },
+    },
+  },
 
   robots: [
     {
