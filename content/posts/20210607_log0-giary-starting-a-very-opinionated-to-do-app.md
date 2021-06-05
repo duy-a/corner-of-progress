@@ -6,17 +6,6 @@ updatedAt: 2021-06-07
 slug: log0-giary-starting-a-very-opinionated-to-do-app
 ---
 
-# Log[0] - Giary - Starting a very opinionated to-do app
-#Corner of Progress# #Giary #draft
-
-- - - -
-title: 
-description:  
-createdAt: 
-updatedAt: 
-slug: log0-giary-starting-a-very-opinionated-to-do-app
-- - - -
-
 As I mentioned in my [previous post](https://cornerofprogress.com/opening-code-editor-once-again), it is time to start a bit bigger project than creating a blog.  Before actually opening a code editor, there are a few things to cover, what this project is.
 
 ## Pain points
