@@ -1,6 +1,6 @@
 ---
 title: Learning blender with a donut
-description: 
+description: Learning blender by completing a famout donut tutorial.
 createdAt: 2021-07-13
 updatedAt: 2021-07-13
 slug: learning-blender-with-a-donut
