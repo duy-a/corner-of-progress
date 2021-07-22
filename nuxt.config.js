@@ -24,6 +24,7 @@ export default {
 
   publicRuntimeConfig: {
     baseUrl: siteUrl,
+    perPage: process.env.PER_PAGE || '5',
   },
 
   head: {

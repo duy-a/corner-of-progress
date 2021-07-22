@@ -5,12 +5,9 @@
     </li>
     <div class="flex justify-between py-5 text-yellow-500">
       <button class="flex space-x-4 text-gray-200">&larr; Newer</button>
-      <button
-        class="flex space-x-4 float-right"
-        @click="$router.push({ path: '/pages/2' })"
-      >
-        Older &rarr;
-      </button>
+      <NuxtLink to="/pages/2">
+        <button class="flex space-x-4 float-right">Older &rarr;</button>
+      </NuxtLink>
     </div>
   </ul>
 </template>

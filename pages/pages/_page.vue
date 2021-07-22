@@ -24,10 +24,10 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, $config }) {
     const totalPosts = (await $content('posts').fetch()).length
     const currentPage = params.page ? +params.page : 1 // it is a string, convert to number
-    const perPage = process.env.PER_PAGE
+    const perPage = $config.perPage
     const lastPage = Math.ceil(totalPosts / perPage)
     const lastPageCount =
       totalPosts % perPage !== 0 ? totalPosts % perPage : totalPosts - perPage
@@ -61,7 +61,7 @@ export default {
       if (this.currentPage > 1) {
         this.$router.push({ path: `/pages/${this.currentPage}` })
       } else {
-        this.$router.push({ paht: '/' })
+        this.$router.push({ path: '/' })
       }
     },
     older() {
