@@ -5,3 +5,6 @@
 [Read](https://cornerofprogress.com/) my personal corner on the internet where I share my thoughts on various topics, learnings, new discoveries & development.
 
 Built with [Nuxt.js](https://nuxtjs.org).
+
+
+<a href="https://www.buymeacoffee.com/duyanhngac" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

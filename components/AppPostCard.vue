@@ -9,7 +9,7 @@
       </dd>
     </dl>
     <div class="space-y-5">
-      <NuxtLink :to="post.slug" :aria-label="`Read - ${post.title}`">
+      <NuxtLink :to="`/${post.slug}`" :aria-label="`Read - ${post.title}`">
         <h2
           class="
             text-3xl
@@ -32,10 +32,9 @@
             font-medium
             text-green-600
             hover:text-green-700
-            dark:text-green-400
-            dark:hover:text-green-300
+            dark:text-green-400 dark:hover:text-green-300
           "
-          :to="post.slug"
+          :to="`/${post.slug}`"
           :aria-label="`Read - ${post.title}`"
         >
           Details →

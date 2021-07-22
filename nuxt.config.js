@@ -4,7 +4,14 @@ const createSitemapRoutes = async () => {
   const posts = await $content('posts').fetch()
 
   for (const post of posts) {
-    routes.push(post.slug)
+    routes.push(`/${post.slug}`)
+  }
+
+  const totalPosts = posts.length
+  const lastPage = Math.ceil(totalPosts / process.env.PER_PAGE)
+
+  for (let i = lastPage; i > 1; i--) {
+    routes.push(`/pages/${i}`)
   }
 
   return routes
@@ -17,6 +24,7 @@ export default {
 
   publicRuntimeConfig: {
     baseUrl: siteUrl,
+    perPage: process.env.PER_PAGE || '5',
   },
 
   head: {
@@ -136,6 +144,12 @@ export default {
     hostname: siteUrl,
     gzip: true,
     routes: createSitemapRoutes,
+  },
+
+  generate: {
+    async routes() {
+      return await createSitemapRoutes()
+    },
   },
 
   build: {},

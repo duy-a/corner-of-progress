@@ -44,7 +44,7 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="about" class="nav-link" aria-label="About page">
+              <NuxtLink to="/about" class="nav-link" aria-label="About page">
                 About
               </NuxtLink>
             </li>
